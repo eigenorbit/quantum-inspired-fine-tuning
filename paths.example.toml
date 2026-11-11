@@ -1,0 +1,28 @@
+# Locations of the data, the outputs and the pretrained weights.
+#
+# Copy this file to `paths.toml` (same folder; not in git) and edit it. An
+# environment variable of the same name always wins over the file; a setting
+# missing from both takes the default shown. Relative paths are relative to
+# this file; `~` is expanded. Check the result with
+#
+#     python -m repro.where             (PYTHONPATH=trichoscopy/src)
+#
+# Use single quotes for Windows paths (TOML literal strings: no escapes).
+
+# Required: the folder holding model_data_step1_anon/ and model_data_step2_anon/.
+DERMA_DATA_ROOT = '/path/to/derma'
+
+# Root of every output (runs, caches, reports); never the repository.
+# DERMA_REPRO_OUT = '/path/to/derma/repro_out'          # default <DERMA_DATA_ROOT>/repro_out
+
+# BRONet clone (commit 9d59c9b) and its ImageNet checkpoint (experiments/bronet_mlp).
+# BRONET_ROOT = '/path/to/derma/pretrained/BRONet'       # default <DERMA_DATA_ROOT>/pretrained/BRONet
+# BRONET_CKPT = '/path/to/derma/pretrained/bronet_imagenet'
+
+# Where finished `repro` runs live (models/step_<n>/<arch>_unique/predictions_final.csv),
+# for the McNemar tests of the experiments. A list; default [<DERMA_REPRO_OUT>].
+# DERMA_BASELINE_ROOTS = ['/path/to/derma/repro_out', '/path/to/other/results']
+
+# The dataset's colour-normalisation reference photograph, for
+# `experiments.bronet_mlp.lossy --renorm authors|ref`. No default.
+# DERMA_COLOR_REFERENCE = '/path/to/derma/color_reference.jpg'

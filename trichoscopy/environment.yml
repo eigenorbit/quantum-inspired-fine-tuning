@@ -1,0 +1,37 @@
+# Conda environment for the reproduction.
+#
+#   conda env create -f environment.yml
+#   conda activate derma-repro
+#
+# Conda supplies only the interpreter; everything else comes from pip. torch is
+# not taken from a conda channel because the CUDA builds are published as wheels
+# on PyTorch's own index, and that is the combination this code was verified
+# with.
+#
+# The `+cu121` suffixes are load-bearing. `torch==2.4.1` alone resolves to the
+# CPU build, training then falls back to the CPU, and it takes weeks instead of
+# hours. Worse, pip treats a plain `torch==2.4.1` requirement as already
+# satisfied by `2.4.1+cpu`, so the mistake is silent. Check after installing:
+#
+#   python -c "import torch; print(torch.cuda.is_available())"
+#
+# Python is pinned to 3.12: torch 2.4.1 publishes no wheels for 3.13 or newer.
+
+name: derma-repro
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.4.1+cu121
+      - torchvision==0.19.1+cu121
+      - numpy==2.1.2
+      - pandas==2.2.3
+      - scipy==1.14.1
+      - matplotlib==3.9.2
+      - scikit-learn==1.5.2
+      - pillow==10.4.0

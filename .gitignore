@@ -1,0 +1,39 @@
+# Python bytecode and tool caches, rebuilt on demand.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# macOS folder metadata.
+.DS_Store
+
+# Jupyter autosaves.
+.ipynb_checkpoints/
+
+# IDE settings are per machine.
+.idea/
+
+# Machine-specific locations (template: paths.example.toml).
+/paths.toml
+
+# Virtual environments.
+.venv/
+venv/
+env/
+
+# Datasets: torchvision and medmnist download into ./data of the working
+# folder (run the robustness code from outside the repository), and the
+# trichoscopy data lives under DERMA_DATA_ROOT. No data in git.
+/data/
+experiments/*/data/
+
+# Weights and checkpoints live under DERMA_REPRO_OUT, never in git. (The .npz
+# files under experiments/robustness/results are result tables, and tracked.)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Local working folders; nothing in the experiments imports them.
+archive/
+experiments/*/archive/

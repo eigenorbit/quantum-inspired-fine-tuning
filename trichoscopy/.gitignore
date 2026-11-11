@@ -1,0 +1,21 @@
+# Trained weights and run artefacts: hundreds of MB per model.
+models/**
+!models/.gitkeep
+
+# Generated tables, figures and logs. Keep the folder, not its contents --
+# except the comparison tables, which are small and worth committing once the
+# run is done (force-add them: git add -f results/*.md results/*.csv).
+results/**
+!results/.gitkeep
+
+# Content hashes, rebuilt on demand by repro.dedup.
+cache/
+
+# The dataset lives outside the repository; see data/README.md.
+data/**
+!data/README.md
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/

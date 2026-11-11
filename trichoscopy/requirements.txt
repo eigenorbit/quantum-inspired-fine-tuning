@@ -1,0 +1,19 @@
+# Python 3.12 (torch 2.4.1 has no wheels for 3.13+).
+#
+# torch/torchvision must be the CUDA build or training falls back to the CPU
+# and takes weeks instead of hours. Install them first, from PyTorch's index:
+#
+#   pip install torch==2.4.1+cu121 torchvision==0.19.1+cu121 \
+#       --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+#
+# Check with:  python -c "import torch; print(torch.cuda.is_available())"
+
+torch==2.4.1
+torchvision==0.19.1
+numpy==2.1.2
+pandas==2.2.3
+scipy==1.14.1
+matplotlib==3.9.2
+scikit-learn==1.5.2
+pillow==10.4.0

@@ -1,0 +1,27 @@
+# BRONet-MLP and ResNet152 experiments. Python 3.12.
+#
+# The full, exactly pinned environment of the results is `requirements.txt` in the
+# repository root (it installs the CUDA build of torch itself). This file is what
+# scripts/setup_bronet.(sh|ps1) installs after it has checked that a CUDA build of
+# torch 2.5.1 is present, e.g.
+#
+#   pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 \
+#       --index-url https://download.pytorch.org/whl/cu121
+#
+# (an installed 2.5.1+cu121 satisfies the plain pins below).
+
+torch==2.5.1
+torchvision==0.20.1
+# the orthogonal layers, the certificate and the losses (https://github.com/eigenorbit/eigenkit)
+eigenkit[torch]==1.2.2
+einops==0.8.2          # imported by BRONet's models package
+PyYAML==6.0.3          # BRONet config.yaml
+pytest==9.1.1
+
+# everything the `repro` package needs (trichoscopy/requirements.txt)
+numpy==2.4.4
+pandas==2.2.3
+scipy==1.15.3
+matplotlib==3.9.2
+scikit-learn==1.5.2
+pillow==10.4.0

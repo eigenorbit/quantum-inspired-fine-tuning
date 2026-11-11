@@ -1,0 +1,2171 @@
+{
+ "about": "Every number of Tables I-III of the paper, as printed, with where it comes from. Checked by check_paper_numbers.py. Mean ± SD is over seeds with the sample SD (ddof = 1), as in the paper; a value is right when it rounds to the printed digits. `1.4e19` stands for 1.4×10^19, `10k` for a count rounded to thousands.",
+ "numbers": [
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, head-only",
+   "column": "accuracy",
+   "printed": "99.1±0.1",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "clean_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, head-only",
+   "column": "L/L0",
+   "printed": "1.00",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, head-only",
+   "column": "median radius",
+   "printed": "1.116±0.033",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, head-only",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "63.4±3.1",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, head-only",
+   "column": "trainable parameters",
+   "printed": "2,050",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, butterfly",
+   "column": "accuracy",
+   "printed": "99.4±0.2",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "clean_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, butterfly",
+   "column": "L/L0",
+   "printed": "1.00",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, butterfly",
+   "column": "median radius",
+   "printed": "1.760±0.007",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, butterfly",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "92.2±0.3",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, butterfly",
+   "column": "trainable parameters",
+   "printed": "8,194",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, lora",
+   "column": "accuracy",
+   "printed": "99.2±0.1",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "clean_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, lora",
+   "column": "L/L0",
+   "printed": "1529",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, lora",
+   "column": "median radius",
+   "printed": "0.003±0.000",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, lora",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "47.4±1.4",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, lora",
+   "column": "trainable parameters",
+   "printed": "18,434",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, full",
+   "column": "accuracy",
+   "printed": "99.1±0.1",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "clean_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, full",
+   "column": "L/L0",
+   "printed": "1825",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, full",
+   "column": "median radius",
+   "printed": "0.004±0.001",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, full",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "63.0±5.4",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "MNIST 3/5 -> 0/8, full",
+   "column": "trainable parameters",
+   "printed": "135,170",
+   "source": {
+    "csv": "experiments/robustness/results/adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, head-only",
+   "column": "accuracy",
+   "printed": "50.6±4.8",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "balanced_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, head-only",
+   "column": "L/L0",
+   "printed": "1.00",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, head-only",
+   "column": "median radius",
+   "printed": "0.181±0.052",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, head-only",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "5.3±6.1",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, head-only",
+   "column": "trainable parameters",
+   "printed": "28,679",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "head-only",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, butterfly",
+   "column": "accuracy",
+   "printed": "51.5±2.8",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "balanced_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, butterfly",
+   "column": "L/L0",
+   "printed": "1.00",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, butterfly",
+   "column": "median radius",
+   "printed": "0.214±0.045",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, butterfly",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "11.2±10.1",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, butterfly",
+   "column": "trainable parameters",
+   "printed": "61,447",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "butterfly",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, lora",
+   "column": "accuracy",
+   "printed": "54.8±0.7",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "balanced_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, lora",
+   "column": "L/L0",
+   "printed": "3.8e7",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, lora",
+   "column": "median radius",
+   "printed": "0.000±0.000",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, lora",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "0.2±0.2",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, lora",
+   "column": "trainable parameters",
+   "printed": "94,215",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "lora",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, full",
+   "column": "accuracy",
+   "printed": "26.5±6.6",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "balanced_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, full",
+   "column": "L/L0",
+   "printed": "1.4e19",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "L_analytic/backbone_L",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, full",
+   "column": "median radius",
+   "printed": "0.000±0.000",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "certified_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, full",
+   "column": "accuracy under PGD (eps = 1)",
+   "printed": "0.0±0.0",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "robust_accuracy",
+    "scale": 100
+   }
+  },
+  {
+   "table": "I",
+   "row": "BloodMNIST -> DermaMNIST, full",
+   "column": "trainable parameters",
+   "printed": "2,134,023",
+   "source": {
+    "csv": "experiments/robustness/results/derma_adaptation.csv",
+    "where": {
+     "mode": "full",
+     "epsilon": 1.0
+    },
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "accuracy",
+   "printed": "79.2±1.9",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   },
+   "note": "assumed `accuracy`; if it does not match, the paper may use `quality.accuracy_paper_composition` (step 1 only)"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "CA@36/255",
+   "printed": "55.2±1.8",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "CA@72/255",
+   "printed": "31.3±4.4",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "CA@108/255",
+   "printed": "11.7±2.9",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "L/L0",
+   "printed": "1.00±0.00",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "median radius",
+   "printed": "0.193±0.015",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "trainable parameters",
+   "printed": "10,245",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, head-only",
+   "column": "time, min",
+   "printed": "0.2±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "head-only",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "accuracy",
+   "printed": "80.4±0.4",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   },
+   "note": "assumed `accuracy`; if it does not match, the paper may use `quality.accuracy_paper_composition` (step 1 only)"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "CA@36/255",
+   "printed": "63.8±1.7",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "CA@72/255",
+   "printed": "41.5±4.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "CA@108/255",
+   "printed": "20.4±4.2",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "L/L0",
+   "printed": "1.00±0.00",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "median radius",
+   "printed": "0.251±0.021",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "trainable parameters",
+   "printed": "100,357",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, butterfly",
+   "column": "time, min",
+   "printed": "14.6±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "butterfly",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "accuracy",
+   "printed": "71.5±0.1",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   },
+   "note": "assumed `accuracy`; if it does not match, the paper may use `quality.accuracy_paper_composition` (step 1 only)"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "CA@36/255",
+   "printed": "31.6±1.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "CA@72/255",
+   "printed": "4.5±0.3",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "CA@108/255",
+   "printed": "0.0±0.1",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "L/L0",
+   "printed": "1.89±0.10",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "median radius",
+   "printed": "0.093±0.005",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "trainable parameters",
+   "printed": "141,317",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, lora_stable",
+   "column": "time, min",
+   "printed": "0.7±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "lora_stable",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "accuracy",
+   "printed": "82.5±0.6",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   },
+   "note": "assumed `accuracy`; if it does not match, the paper may use `quality.accuracy_paper_composition` (step 1 only)"
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "CA@36/255",
+   "printed": "35.6±1.7",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "CA@72/255",
+   "printed": "1.7±0.2",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "CA@108/255",
+   "printed": "0.0±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "L/L0",
+   "printed": "5.12±0.77",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "median radius",
+   "printed": "0.111±0.002",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "trainable parameters",
+   "printed": "33,581,061",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "Diagnosis, full_stable",
+   "column": "time, min",
+   "printed": "1.1±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 1,
+    "run": "full_stable",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "accuracy",
+   "printed": "67.8±0.9",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "CA@36/255",
+   "printed": "37.2±1.9",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "CA@72/255",
+   "printed": "13.5±1.5",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "CA@108/255",
+   "printed": "2.1±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "L/L0",
+   "printed": "1.00±0.00",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "median radius",
+   "printed": "0.132±0.007",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "trainable parameters",
+   "printed": "6,147",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, head-only",
+   "column": "time, min",
+   "printed": "0.1±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "head-only",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "accuracy",
+   "printed": "69.3±2.1",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "CA@36/255",
+   "printed": "40.6±1.3",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "CA@72/255",
+   "printed": "17.2±0.6",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "CA@108/255",
+   "printed": "4.7±0.2",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "L/L0",
+   "printed": "1.00±0.00",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "median radius",
+   "printed": "0.135±0.006",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "trainable parameters",
+   "printed": "96,259",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, butterfly",
+   "column": "time, min",
+   "printed": "6.4±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "butterfly",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "accuracy",
+   "printed": "65.3±0.2",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "CA@36/255",
+   "printed": "21.3±0.8",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "CA@72/255",
+   "printed": "1.0±0.6",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "CA@108/255",
+   "printed": "0.0±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "L/L0",
+   "printed": "2.47±0.31",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "median radius",
+   "printed": "0.082±0.004",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "trainable parameters",
+   "printed": "137,219",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, lora_stable",
+   "column": "time, min",
+   "printed": "0.3±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "lora_stable",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "accuracy",
+   "printed": "69.6±0.8",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "CA@36/255",
+   "printed": "17.9±5.6",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.36/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "CA@72/255",
+   "printed": "0.7±0.5",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.72/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "CA@108/255",
+   "printed": "0.0±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.certified_accuracy_named.108/255",
+    "scale": 100
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "L/L0",
+   "printed": "8.49±5.05",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "lipschitz.L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "median radius",
+   "printed": "0.074±0.005",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "certificate_official.median_radius",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "trainable parameters",
+   "printed": "33,576,963",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "which": "best",
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "II",
+   "row": "AA activity, full_stable",
+   "column": "time, min",
+   "printed": "0.5±0.0",
+   "source": {
+    "runs": "bronet_mlp",
+    "step": 2,
+    "run": "full_stable",
+    "history_sum": "seconds_train",
+    "scale": 0.016666666666666666
+   },
+   "exact": false,
+   "note": "training steps only (sum of seconds_train over history.json), without evaluation and checkpoint writes; wall-clock on an RTX 4070: reported, never a failure"
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, head-only",
+   "column": "accuracy",
+   "printed": "81.0±0.7",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, head-only",
+   "column": "trainable parameters",
+   "printed": "10k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "head-only",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, head-only",
+   "column": "L/L0",
+   "printed": "1",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step1_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "head-only"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, head-only",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "56.7",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best_eps1-2-4-9-18/attacks_step1.csv",
+    "where": {
+     "run": "head-only",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, head-only",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "11.0",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best/attacks_step1.csv",
+    "where": {
+     "run": "head-only",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, butterfly",
+   "column": "accuracy",
+   "printed": "83.6±0.5",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, butterfly",
+   "column": "trainable parameters",
+   "printed": "26k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "butterfly",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, butterfly",
+   "column": "L/L0",
+   "printed": "1",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step1_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "butterfly"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, butterfly",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "57.3",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best_eps1-2-4-9-18/attacks_step1.csv",
+    "where": {
+     "run": "butterfly",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, butterfly",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "7.3",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best/attacks_step1.csv",
+    "where": {
+     "run": "butterfly",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, lora",
+   "column": "accuracy",
+   "printed": "82.8±0.3",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "lora",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, lora",
+   "column": "trainable parameters",
+   "printed": "51k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "lora",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, lora",
+   "column": "L/L0",
+   "printed": "12.73",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step1_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "lora"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, lora",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "51.3",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best_eps1-2-4-9-18/attacks_step1.csv",
+    "where": {
+     "run": "lora",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, lora",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "6.3",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best/attacks_step1.csv",
+    "where": {
+     "run": "lora",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, full",
+   "column": "accuracy",
+   "printed": "84.9±1.2",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "full",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, full",
+   "column": "trainable parameters",
+   "printed": "4,473k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 1,
+    "run": "full",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, full",
+   "column": "L/L0",
+   "printed": "1.02",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step1_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "full"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, full",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "59.3",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best_eps1-2-4-9-18/attacks_step1.csv",
+    "where": {
+     "run": "full",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "Diagnosis, full",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "15.0",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_1_bs32_best/attacks_step1.csv",
+    "where": {
+     "run": "full",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, head-only",
+   "column": "accuracy",
+   "printed": "76.7±3.0",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, head-only",
+   "column": "trainable parameters",
+   "printed": "6k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "head-only",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, head-only",
+   "column": "L/L0",
+   "printed": "1",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step2_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "head-only"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, head-only",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "48.3",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best_eps1-2-4-9-18/attacks_step2.csv",
+    "where": {
+     "run": "head-only",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, head-only",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "5.4",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best/attacks_step2.csv",
+    "where": {
+     "run": "head-only",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, butterfly",
+   "column": "accuracy",
+   "printed": "79.0±1.0",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "butterfly_stable",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   },
+   "note": "run butterfly_stable: the stable learning rate, marked with a dagger in the paper"
+  },
+  {
+   "table": "III",
+   "row": "AA activity, butterfly",
+   "column": "trainable parameters",
+   "printed": "22k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "butterfly_stable",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   },
+   "note": "run butterfly_stable: the stable learning rate, marked with a dagger in the paper"
+  },
+  {
+   "table": "III",
+   "row": "AA activity, butterfly",
+   "column": "L/L0",
+   "printed": "1",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step2_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "butterfly_stable"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, butterfly",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "47.9",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best_eps1-2-4-9-18/attacks_step2.csv",
+    "where": {
+     "run": "butterfly_stable",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, butterfly",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "6.2",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best/attacks_step2.csv",
+    "where": {
+     "run": "butterfly_stable",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, lora",
+   "column": "accuracy",
+   "printed": "76.8±1.0",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "lora",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, lora",
+   "column": "trainable parameters",
+   "printed": "47k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "lora",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, lora",
+   "column": "L/L0",
+   "printed": "3.02",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step2_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "lora"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, lora",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "41.2",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best_eps1-2-4-9-18/attacks_step2.csv",
+    "where": {
+     "run": "lora",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, lora",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "2.1",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best/attacks_step2.csv",
+    "where": {
+     "run": "lora",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, full",
+   "column": "accuracy",
+   "printed": "76.4±1.7",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "full",
+    "which": "best",
+    "batch_size": 32,
+    "value": "accuracy",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, full",
+   "column": "trainable parameters",
+   "printed": "4,469k",
+   "source": {
+    "runs": "resnet_adapt",
+    "step": 2,
+    "run": "full",
+    "which": "best",
+    "batch_size": 32,
+    "value": "trainable_params",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, full",
+   "column": "L/L0",
+   "printed": "3.68",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "lipschitz_step2_bs32.json",
+    "list": "runs",
+    "where": {
+     "run": "full"
+    },
+    "value": "L_over_L0",
+    "scale": 1
+   }
+  },
+  {
+   "table": "III",
+   "row": "AA activity, full",
+   "column": "PGD at 9/255, seed 0",
+   "printed": "46.7",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best_eps1-2-4-9-18/attacks_step2.csv",
+    "where": {
+     "run": "full",
+     "seed": 0,
+     "epsilon_name": "0.0353"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  },
+  {
+   "table": "III",
+   "row": "AA activity, full",
+   "column": "PGD at 36/255, seed 0",
+   "printed": "7.1",
+   "source": {
+    "results": "resnet_adapt",
+    "file": "attacks/step_2_bs32_best/attacks_step2.csv",
+    "where": {
+     "run": "full",
+     "seed": 0,
+     "epsilon_name": "36/255"
+    },
+    "value": "pgd_robust_accuracy",
+    "scale": 1
+   },
+   "seeds": 1
+  }
+ ]
+}

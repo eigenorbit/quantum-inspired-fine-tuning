@@ -1,0 +1,10 @@
+torch>=2.5
+torchvision>=0.20
+numpy>=2.4
+matplotlib>=3.7
+pytest>=7.4
+pandas>=2.0
+# the orthogonal layers; for exact versions install requirements-lock.txt or
+# requirements-freeze.txt instead (README.md, "Setup")
+eigenkit[torch]==1.2.2
+medmnist>=3.0     # the MedMNIST v2 datasets used in section 7

@@ -1,0 +1,27 @@
+# The exact environment of the robustness experiments: the pinned set of the
+# repository (torch 2.5.1, numpy 2.4.4, scipy 1.15.3, pandas 2.2.3,
+# scikit-learn 1.5.2, matplotlib 3.9.2, pillow 10.4.0, eigenkit 1.2.2, ...)
+# plus medmnist and what it needs, every version pinned. Python 3.12.
+#
+#   pip install -r experiments/robustness/requirements-lock.txt
+#
+# Installed together and checked (`pip check`, every test suite of the
+# repository) on macOS arm64 with CPU builds of torch; on MPS, six tests here
+# need PYTORCH_ENABLE_MPS_FALLBACK=1 (README.md, "Setup"). On a machine without
+# CUDA 12 drivers, use the CPU builds as described at the top of the root
+# requirements.txt.
+#
+# requirements-freeze.txt is the environment the committed results/ were made
+# with (a Mac, torch 2.14.0, Python 3.14); requirements.txt lists the direct
+# dependencies without exact versions.
+
+-r ../../requirements.txt
+
+# medmnist and its dependencies that the root set does not have
+fire==0.7.1
+imageio==2.38.1
+lazy-loader==0.6
+medmnist==3.0.2
+scikit-image==0.26.0
+termcolor==3.3.0
+tifffile==2026.10.15
