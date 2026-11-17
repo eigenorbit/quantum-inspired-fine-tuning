@@ -1,7 +1,14 @@
 # Quantum-inspired orthogonal adapters for certified medical image classification
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.18775-b31b1b.svg)](https://arxiv.org/abs/2611.18775)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch 2.5.1](https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c.svg)](https://pytorch.org/)
+[![eigenkit 1.2.2](https://img.shields.io/badge/eigenkit-1.2.2-6f42c1.svg)](https://pypi.org/project/eigenkit/1.2.2/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
+
 Code of the paper "Quantum-inspired orthogonal adapters for certifiably robust
-medical image classification". A pretrained network is adapted to a new task as
+medical image classification" ([arXiv:2611.18775](https://arxiv.org/abs/2611.18775)).
+A pretrained network is adapted to a new task as
 **R(θ)·W**, with R(θ) an orthogonal butterfly of Givens rotations (RBS gates).
 R keeps every singular value of W, so the Lipschitz constant of a certified
 network, and with it its certified radius, survives the adaptation; LoRA and full
@@ -160,7 +167,7 @@ Two classification tasks:
 
 | step | task | classes (label: name) |
 |---|---|---|
-| 1 | scalp diagnosis | 0 AA (alopecia areata), 1 FFA-LPP (frontal fibrosing alopecia / lichen planopilaris), 2 DF (decalvans folliculitis), 3 AGA (androgenetic alopecia), 4 CHP (clinically healthy pattern) |
+| 1 | scalp diagnosis | 0 AA (alopecia areata), 1 FFA-LPP (frontal fibrosing alopecia / lichen planopilaris), 2 DF (folliculitis decalvans), 3 AGA (androgenetic alopecia), 4 CHP (clinically healthy pattern) |
 | 2 | alopecia areata activity | 0 AA active, 1 AA inactive, 2 AA in regrowth |
 
 Layout under `DERMA_DATA_ROOT`:
@@ -204,6 +211,21 @@ network fine-tuned:
 | EfficientNetB0 | **0.8892** | **0.8817** | 0.8083 | 0.8075 |
 | DenseNet169 | 0.8736 | 0.8682 | **0.8333** | **0.8336** |
 | ResNet152 | 0.8627 | 0.8540 | 0.7916 | 0.7913 |
+
+## Citation
+
+```bibtex
+@misc{tsurkan2026quantum,
+  title         = {Quantum-inspired orthogonal adapters for certifiably robust medical image classification},
+  author        = {Tsurkan, Olga and Domingo, Laia and Orlova, Victoria and Sagingalieva, Asel and Zalaudek, Iris and Caposiena Caro, Raffaele Dante},
+  year          = {2026},
+  eprint        = {2611.18775},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  doi           = {10.48550/arXiv.2611.18775},
+  url           = {https://arxiv.org/abs/2611.18775}
+}
+```
 
 ## License
 

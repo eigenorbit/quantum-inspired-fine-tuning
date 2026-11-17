@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+type: software
+title: "Code of the paper: Quantum-inspired orthogonal adapters for certifiably robust medical image classification"
+authors: &authors
+  - family-names: Tsurkan
+    given-names: Olga
+  - family-names: Domingo
+    given-names: Laia
+  - family-names: Orlova
+    given-names: Victoria
+  - family-names: Sagingalieva
+    given-names: Asel
+  - family-names: Zalaudek
+    given-names: Iris
+  - family-names: Caposiena Caro
+    given-names: Raffaele Dante
+repository-code: "https://github.com/eigenorbit/quantum-inspired-fine-tuning"
+url: "https://arxiv.org/abs/2611.18775"
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "Quantum-inspired orthogonal adapters for certifiably robust medical image classification"
+  authors: *authors
+  year: 2026
+  journal: "arXiv preprint arXiv:2611.18775"
+  doi: 10.48550/arXiv.2611.18775
+  url: "https://arxiv.org/abs/2611.18775"
